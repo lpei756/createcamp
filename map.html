@@ -20,12 +20,30 @@ function myMap() {
     } else {
         alert("Can't get current location");
     }
+    addMarkers();
 }
 
 function updatePosition(position) {
     map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
     map.setZoom(10);
 }
+
+function addMarkers() {
+    const icon = {
+        url: "assets/dogicon.png", // url
+        scaledSize: new google.maps.Size(30, 30), // scaled size
+        origin: new google.maps.Point(0,0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
+    var marker = new google.maps.Marker({
+        position:map.getCenter(),
+        icon:icon
+    });
+
+    marker.setMap(map); 
+}
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8U0AaLpOZ3DYMTtO8_FMn9bTb_QS7H7E&callback=myMap"></script>
