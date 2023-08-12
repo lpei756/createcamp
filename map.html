@@ -7,6 +7,7 @@
 <div id="googleMap" style="width:100%;height:400px;"></div>
 
 <script>
+
 var map;
 
 function myMap() {
@@ -20,7 +21,7 @@ function myMap() {
     } else {
         alert("Can't get current location");
     }
-    addMarkers();
+    addPlaces();
 }
 
 function updatePosition(position) {
@@ -28,7 +29,7 @@ function updatePosition(position) {
     map.setZoom(10);
 }
 
-function addMarkers() {
+function addPlaces() {
     const icon = {
         url: "assets/dogicon.png", // url
         scaledSize: new google.maps.Size(30, 30), // scaled size
