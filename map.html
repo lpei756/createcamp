@@ -7,31 +7,29 @@
 <div id="googleMap" style="width:100%;height:400px;"></div>
 
 <script>
-var latitude = 51.508742;
-var longitude = -0.12085;
+var latitude;
+var longitude;
 
 getLocation();
 
+var map;
+
 function myMap() {
-    getLocation();
-var mapProp= {
-  center:new google.maps.LatLng(latitude, longitude),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var mapProp = {
+        center:new google.maps.LatLng(-36.848461, 174.763336), // Goes to NZ coords by default
+        zoom:4,
+    };
+    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(updatePosition);
+    } else {
+        alert("Can't get current location");
+    }
 }
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    alert("Can't get current location");
-  }
-}
-
-function showPosition(position) {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
+function updatePosition(position) {
+    map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+    map.setZoom(10);
 }
 </script>
 
