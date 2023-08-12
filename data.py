@@ -16,4 +16,3 @@ for i in range(len(sample_load_file['results'])):
 print(new_list)
 print(len(new_list))
 
-json.dump(new_list, 'new_loc_data')
