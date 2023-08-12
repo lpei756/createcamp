@@ -30,8 +30,6 @@
 
 
         function addPlaces() {
-            // TODO add markers
-            
             for (var i = 0; i < loc_data.length; i++) {
                 addMarker(new google.maps.LatLng(loc_data[i].lat, loc_data[i].lng));
             }
@@ -41,10 +39,10 @@
 
         function addMarker(location) {
             const icon = {
-                url: "assets/dogicon.png", // url
-                scaledSize: new google.maps.Size(30, 30), // scaled size
-                origin: new google.maps.Point(0,0), // origin
-                anchor: new google.maps.Point(0, 0) // anchor
+                url: "assets/dogicon.png",
+                scaledSize: new google.maps.Size(30, 30), 
+                origin: new google.maps.Point(0,0), 
+                anchor: new google.maps.Point(0, 0) 
             };
 
             var marker = new google.maps.Marker({
