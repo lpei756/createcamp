@@ -1,0 +1,1873 @@
+/* Place- cards */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: relative;
+width: 535px;
+height: 160px;
+
+background: #D9D9D9;
+border-radius: 8px;
+
+
+/* photo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+width: 160px;
+height: 160px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Rectangle 5 */
+
+width: 160px;
+height: 160px;
+
+background: url(Checker.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* card content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 365px;
+height: 153px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Place- Name */
+
+width: 365px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* tags */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+align-content: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 324px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* icon */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Guides */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* PixelGrid */
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+
+/* Offset */
+
+position: absolute;
+visibility: hidden;
+width: 48px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+
+/* GridLines */
+
+position: absolute;
+width: 46px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+transform: rotate(0deg);
+
+
+/* Line */
+
+position: absolute;
+left: 4.17%;
+right: -4.17%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(90deg);
+
+
+/* Line */
+
+position: absolute;
+left: 8.33%;
+right: -8.33%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 12.5%;
+right: -12.5%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 16.67%;
+right: -16.67%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 20.83%;
+right: -20.83%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 25%;
+right: -25%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 29.17%;
+right: -29.17%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 33.33%;
+right: -33.33%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 37.5%;
+right: -37.5%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 41.67%;
+right: -41.67%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 45.83%;
+right: -45.83%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 50%;
+right: -50%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 54.17%;
+right: -54.17%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 58.33%;
+right: -58.33%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 62.5%;
+right: -62.5%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 66.67%;
+right: -66.67%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 70.83%;
+right: -70.83%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 75%;
+right: -75%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 79.17%;
+right: -79.17%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 83.33%;
+right: -83.33%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 87.5%;
+right: -87.5%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 91.67%;
+right: -91.67%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 95.83%;
+right: -95.83%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* GridLines */
+
+position: absolute;
+width: 48px;
+height: 46px;
+left: 0px;
+top: 0px;
+
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 4.17%;
+bottom: 95.83%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 0%;
+bottom: 100%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 8.33%;
+bottom: 91.67%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 12.5%;
+bottom: 87.5%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 16.67%;
+bottom: 83.33%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 20.83%;
+bottom: 79.17%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 25%;
+bottom: 75%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 29.17%;
+bottom: 70.83%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 33.33%;
+bottom: 66.67%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 37.5%;
+bottom: 62.5%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 41.67%;
+bottom: 58.33%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 45.83%;
+bottom: 54.17%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 50%;
+bottom: 50%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 54.17%;
+bottom: 45.83%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 58.33%;
+bottom: 41.67%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 62.5%;
+bottom: 37.5%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 66.67%;
+bottom: 33.33%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 70.83%;
+bottom: 29.17%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 75%;
+bottom: 25%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 79.17%;
+bottom: 20.83%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 83.33%;
+bottom: 16.67%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 87.5%;
+bottom: 12.5%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 91.67%;
+bottom: 8.33%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 95.83%;
+bottom: 4.17%;
+
+border: 1.03125px solid rgba(0, 0, 0, 0.1);
+transform: rotate(180deg);
+
+
+/* Center */
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+
+/* GridLines */
+
+position: absolute;
+width: 44px;
+height: 48px;
+left: 2px;
+top: 0px;
+
+transform: rotate(0deg);
+
+
+/* Line */
+
+position: absolute;
+left: 4.17%;
+right: -4.17%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 8.33%;
+right: -8.33%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 12.5%;
+right: -12.5%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 16.67%;
+right: -16.67%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 20.83%;
+right: -20.83%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 25%;
+right: -25%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 29.17%;
+right: -29.17%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 33.33%;
+right: -33.33%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 37.5%;
+right: -37.5%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 41.67%;
+right: -41.67%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 45.83%;
+right: -45.83%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 50%;
+right: -50%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 54.17%;
+right: -54.17%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 58.33%;
+right: -58.33%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 62.5%;
+right: -62.5%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 66.67%;
+right: -66.67%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 70.83%;
+right: -70.83%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 75%;
+right: -75%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 79.17%;
+right: -79.17%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 83.33%;
+right: -83.33%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 87.5%;
+right: -87.5%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 91.67%;
+right: -91.67%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* Line */
+
+position: absolute;
+left: 95.83%;
+right: -95.83%;
+top: 0%;
+bottom: 100%;
+
+transform: matrix(0, 1, -1, 0, 0, 0);
+
+
+/* GridLines */
+
+position: absolute;
+width: 48px;
+height: 44px;
+left: 0px;
+top: 2px;
+
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 4.17%;
+bottom: 95.83%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 8.33%;
+bottom: 91.66%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 12.5%;
+bottom: 87.5%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 16.67%;
+bottom: 83.33%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 20.83%;
+bottom: 79.16%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 25%;
+bottom: 75%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 29.17%;
+bottom: 70.83%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 33.33%;
+bottom: 66.66%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 37.5%;
+bottom: 62.5%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 41.67%;
+bottom: 58.33%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 45.83%;
+bottom: 54.16%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 50%;
+bottom: 50%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 54.17%;
+bottom: 45.83%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 58.34%;
+bottom: 41.66%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 62.5%;
+bottom: 37.5%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 66.67%;
+bottom: 33.33%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 70.83%;
+bottom: 29.16%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 75%;
+bottom: 25%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 79.17%;
+bottom: 20.83%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 83.33%;
+bottom: 16.66%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 87.5%;
+bottom: 12.5%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 91.67%;
+bottom: 8.33%;
+
+transform: rotate(180deg);
+
+
+/* Line */
+
+position: absolute;
+left: 100%;
+right: -100%;
+top: 95.83%;
+bottom: 4.16%;
+
+transform: rotate(180deg);
+
+
+/* Trim */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Guide/20% */
+background: rgba(0, 188, 212, 0.1);
+
+
+/* Grid */
+
+position: absolute;
+width: 396px;
+height: 396px;
+left: 0px;
+top: 0px;
+
+
+
+/* Line 5 */
+
+position: absolute;
+width: 396px;
+height: 0px;
+left: 132px;
+top: 0px;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+transform: rotate(90deg);
+
+
+/* Line 6 */
+
+position: absolute;
+width: 396px;
+height: 0px;
+left: 264px;
+top: 0px;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+transform: rotate(90deg);
+
+
+/* Line 5 */
+
+position: absolute;
+width: 396px;
+height: 0px;
+left: 396px;
+top: 132px;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+transform: rotate(-180deg);
+
+
+/* Line 6 */
+
+position: absolute;
+width: 396px;
+height: 0px;
+left: 396px;
+top: 264px;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+transform: rotate(-180deg);
+
+
+/* Diagonals */
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+
+/* Line 1 */
+
+position: absolute;
+left: 0px;
+right: -19.88px;
+top: 0px;
+bottom: 48px;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+transform: rotate(45deg);
+
+
+/* Line 2 */
+
+position: absolute;
+left: 0px;
+right: -19.88px;
+top: 48px;
+bottom: 0px;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+
+
+/* Square */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+border-radius: 33px;
+
+
+/* TallRectangle */
+
+position: absolute;
+visibility: hidden;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+border-radius: 33px;
+
+
+/* LongRectangle */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+border-radius: 33px;
+
+
+/* LargeCircle */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+border-radius: 16483.5px;
+
+
+/* SmallCircle */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 33.33%;
+bottom: 33.33%;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+border-radius: 16483.5px;
+
+
+/* Outline */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+
+/* Guide */
+border: 1.03125px solid #2F80ED;
+
+
+/* crowded */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+
+position: absolute;
+width: 36px;
+height: 39.66px;
+left: 7.02px;
+top: 4px;
+
+
+
+/* Union */
+
+width: 10px;
+height: 39.66px;
+
+background: #F74646;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 8px;
+height: 8px;
+left: 0.98px;
+top: 0px;
+
+background: #D9D9D9;
+
+
+/* Union */
+
+position: absolute;
+width: 10px;
+height: 30px;
+left: 0px;
+top: 9.66px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 6px;
+height: 27.2px;
+left: 1.98px;
+top: 12.46px;
+
+background: #D9D9D9;
+border-radius: 2px;
+
+
+/* Rectangle 11 */
+
+position: absolute;
+width: 10px;
+height: 21.35px;
+left: 0px;
+top: 9.66px;
+
+background: #D9D9D9;
+border-radius: 2px;
+
+
+/* Union */
+
+width: 10px;
+height: 39.66px;
+
+background: #F74646;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 8px;
+height: 8px;
+left: 14px;
+top: 0px;
+
+background: #D9D9D9;
+
+
+/* Group 1 */
+
+position: absolute;
+width: 10px;
+height: 30px;
+left: 13px;
+top: 9.66px;
+
+
+
+/* Union */
+
+position: absolute;
+width: 10px;
+height: 30px;
+left: 13px;
+top: 9.66px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 6px;
+height: 27.2px;
+left: 14.98px;
+top: 12.46px;
+
+background: #D9D9D9;
+border-radius: 2px;
+
+
+/* Rectangle 11 */
+
+position: absolute;
+width: 10px;
+height: 21.35px;
+left: 13px;
+top: 9.66px;
+
+background: #D9D9D9;
+border-radius: 2px;
+
+
+/* Union */
+
+width: 10px;
+height: 39.66px;
+
+background: #F74646;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Ellipse 3 */
+
+position: absolute;
+width: 8px;
+height: 8px;
+left: 27px;
+top: 0px;
+
+background: #D9D9D9;
+
+
+/* Group 2 */
+
+position: absolute;
+width: 10px;
+height: 30px;
+left: 26px;
+top: 9.66px;
+
+
+
+/* Union */
+
+position: absolute;
+width: 10px;
+height: 30px;
+left: 26px;
+top: 9.66px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 6px;
+height: 27.2px;
+left: 27.98px;
+top: 12.46px;
+
+background: #D9D9D9;
+border-radius: 2px;
+
+
+/* Rectangle 11 */
+
+position: absolute;
+width: 10px;
+height: 21.35px;
+left: 26px;
+top: 9.66px;
+
+background: #D9D9D9;
+border-radius: 2px;
+
+
+/* status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 8px;
+gap: 10px;
+
+width: 76px;
+height: 27px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Opened */
+
+width: 60px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 8px;
+gap: 10px;
+
+width: 87px;
+height: 27px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Category */
+
+width: 71px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 8px;
+gap: 10px;
+
+width: 83px;
+height: 27px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Capacity */
+
+width: 67px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 8px;
+gap: 10px;
+
+width: 67px;
+height: 27px;
+
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* 0.3 km */
+
+width: 51px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
