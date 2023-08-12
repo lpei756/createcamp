@@ -5,50 +5,57 @@
 
         <div id="googleMap" style="width:100%;height:400px;"></div>
         <script>
+        var locations = [
+        {name: "Big King Reserve", lat: -36.9027136, lng: 174.7547328},
+        {name: "Meola Reef Dog Park", lat: -36.8573829, lng: 174.7107944},
+        {name: "Macleans Park", lat: -36.8798802, lng: 174.9172788},
+        {name: "Waiatarua Reserve", lat: -36.8870012, lng: 174.8259604},
+        {name: "Cornwall Park Cafe", lat: -36.8956428, lng: 174.788663},
+        {name: "Mt Albert Domain", lat: -36.8914194, lng: 174.7191481},
+        {name: "Manuka Reserve", lat: -36.7778346, lng: 174.6995507},
+        {name: "The Garden Shed", lat: -36.8826092, lng: 174.7623219},
+        {name: "Hoppers Garden Bar", lat: -36.8566419, lng: 174.7466848},
+        {name: "Dear Jervois", lat: -36.8457605, lng: 174.7342038},
+        {name: "Te Tauranga", lat: -36.9241366, lng: 174.7755313},
+        {name: "Swashbucklers Restaurant & Bar", lat: -36.8438487, lng: 174.7517872},
+        {name: "The Cav", lat: -36.8480584, lng: 174.7466791},
+        {name: "Churchill Park", lat: -36.8550789, lng: 174.8756986},
+        {name: "Fantail & Turtle", lat: -36.7851656, lng: 174.7541492},
+        {name: "Duder Regional Park", lat: -36.9058798, lng: 175.0841484},
+        {name: "Longroom & Longshot", lat: -36.8572011, lng: 174.7478098},
+        {name: "Geeks on Sainsbury", lat: -36.8796105, lng: 174.7340486},
+        {name: "Takapuna Beach Cafe", lat: -36.784201, lng: 174.7753098},
+        {name: "Hotel Ponsonby", lat: -36.8472045, lng: 174.7445129}
+        ];
         var map;
         var gpsCoords;
 
         function createInfowindowContent(businessName, distance) {
+            // TODO add stuff here from data.
             var content = document.createElement('div');
 
             var h1 = document.createElement("h1");
             h1.innerText = businessName;
             content.appendChild(h1);
 
+            var p = document.createElement('p');
+            p.innerHTML = `<strong>Address:</strong> TODO add address here.`;
+            content.appendChild(p);
+
+            var p = document.createElement('p');
+            p.innerHTML = `<strong>Description:</strong> TODO add Description here.`;
+            content.appendChild(p);
+
+            var p = document.createElement('p');
+            p.innerHTML = `<strong>Phone Number:</strong> TODO add Phone Number here.`;
+            content.appendChild(p);
+
+            var p = document.createElement('p');
+            p.innerHTML = `<strong>Distance:</strong> ${distance} kms away.`;
+            content.appendChild(p);
+
             return content;
         }
-
-        var infoWindowContent = `<h1>Business Name</h1>
-  <p><strong>Address:</strong> Business Address Here</p>
-  <p><strong>Description:</strong> Brief description of the business.</p>
-  <p><strong>Facilities:</strong> List of facilities available.</p>
-  <p><strong>Phone Number:</strong> (123) 456-7890</p>
-  <p><strong>Distance:</strong> kilometres away.</p>
-  <p><strong>Web Page:</strong> <a href="https://www.businesswebsite.com">www.businesswebsite.com</a></p>
-  <h2>Opening Hours</h2>`;
-
-        var locations = [
-    {name: "Big King Reserve", lat: -36.9027136, lng: 174.7547328},
-    {name: "Meola Reef Dog Park", lat: -36.8573829, lng: 174.7107944},
-    {name: "Macleans Park", lat: -36.8798802, lng: 174.9172788},
-    {name: "Waiatarua Reserve", lat: -36.8870012, lng: 174.8259604},
-    {name: "Cornwall Park Cafe", lat: -36.8956428, lng: 174.788663},
-    {name: "Mt Albert Domain", lat: -36.8914194, lng: 174.7191481},
-    {name: "Manuka Reserve", lat: -36.7778346, lng: 174.6995507},
-    {name: "The Garden Shed", lat: -36.8826092, lng: 174.7623219},
-    {name: "Hoppers Garden Bar", lat: -36.8566419, lng: 174.7466848},
-    {name: "Dear Jervois", lat: -36.8457605, lng: 174.7342038},
-    {name: "Te Tauranga", lat: -36.9241366, lng: 174.7755313},
-    {name: "Swashbucklers Restaurant & Bar", lat: -36.8438487, lng: 174.7517872},
-    {name: "The Cav", lat: -36.8480584, lng: 174.7466791},
-    {name: "Churchill Park", lat: -36.8550789, lng: 174.8756986},
-    {name: "Fantail & Turtle", lat: -36.7851656, lng: 174.7541492},
-    {name: "Duder Regional Park", lat: -36.9058798, lng: 175.0841484},
-    {name: "Longroom & Longshot", lat: -36.8572011, lng: 174.7478098},
-    {name: "Geeks on Sainsbury", lat: -36.8796105, lng: 174.7340486},
-    {name: "Takapuna Beach Cafe", lat: -36.784201, lng: 174.7753098},
-    {name: "Hotel Ponsonby", lat: -36.8472045, lng: 174.7445129}
-];
 
         function myMap() {
             var mapProp = {
@@ -100,9 +107,9 @@
                 map.setCenter(marker.getPosition());
 
                 // TODO make marker open business details page.
-                alert(haversineDistanceKm(marker.getPosition().lat(), marker.getPosition().lng(), gpsCoords.latitude, gpsCoords.longitude) + " kms away.");
+                var distanceInKm = calcDistanceKm(marker.getPosition().lat(), marker.getPosition().lng(), gpsCoords.latitude, gpsCoords.longitude);
                 const infowindow = new google.maps.InfoWindow({
-                    content: createInfowindowContent(locations[locationIndex].name),
+                    content: createInfowindowContent(locations[locationIndex].name, distanceInKm),
                     ariaLabel: "Uluru",
                 });
                 infowindow.open({
@@ -114,7 +121,7 @@
             marker.setMap(map); 
         }
 
-        function haversineDistanceKm(lat1, lon1, lat2, lon2) {
+        function calcDistanceKm(lat1, lon1, lat2, lon2) {
             // Radius of the Earth in kilometers
             const R = 6371.0;    // Convert latitude and longitude from degrees to radians
             const lat1Rad = lat1 * (Math.PI / 180);
