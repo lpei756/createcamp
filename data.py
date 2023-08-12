@@ -5,14 +5,20 @@ with open('location_data.json', 'r') as json_file:
 	print(sample_load_file)
 
 
-new_list = []
+category_list = []
 for i in range(len(sample_load_file['results'])):
-	new_list.append(sample_load_file['results'][i]['geometry']['location'])
+	category_list.append(sample_load_file['results'][i]['name'])
 		
 # Extract 'location' field
 # location = sample_load_file['results'][0]['geometry']['location']
 
 # Print extracted location
-print(new_list)
-print(len(new_list))
+print(category_list)
+
+# Define the filename for the new JSON file
+new_file_name = "place_name.json"
+
+# Write the list to the new JSON file
+with open(new_file_name, 'w') as json_file:
+    json.dump(place_name_list, json_file, indent=4)
 
