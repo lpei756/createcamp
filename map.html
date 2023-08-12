@@ -6,8 +6,49 @@
         <div id="googleMap" style="width:100%;height:400px;"></div>
         <script>
         var map;
+        var gpsCoords;
 
-        var loc_data = [{'lat': -36.9027136, 'lng': 174.7547328}, {'lat': -36.8573829, 'lng': 174.7107944}, {'lat': -36.8798802, 'lng': 174.9172788}, {'lat': -36.8870012, 'lng': 174.8259604}, {'lat': -36.8956428, 'lng': 174.788663}, {'lat': -36.8914194, 'lng': 174.7191481}, {'lat': -36.7778346, 'lng': 174.6995507}, {'lat': -36.8826092, 'lng': 174.7623219}, {'lat': -36.8566419, 'lng': 174.7466848}, {'lat': -36.8457605, 'lng': 174.7342038}, {'lat': -36.9241366, 'lng': 174.7755313}, {'lat': -36.8438487, 'lng': 174.7517872}, {'lat': -36.8480584, 'lng': 174.7466791}, {'lat': -36.8550789, 'lng': 174.8756986}, {'lat': -36.7851656, 'lng': 174.7541492}, {'lat': -36.9058798, 'lng': 175.0841484}, {'lat': -36.8572011, 'lng': 174.7478098}, {'lat': -36.8796105, 'lng': 174.7340486}, {'lat': -36.784201, 'lng': 174.7753098}, {'lat': -36.8472045, 'lng': 174.7445129}];
+        function createInfowindowContent(businessName, distance) {
+            var content = document.createElement('div');
+
+            var h1 = document.createElement("h1");
+            h1.innerText = businessName;
+            content.appendChild(h1);
+
+            return content;
+        }
+
+        var infoWindowContent = `<h1>Business Name</h1>
+  <p><strong>Address:</strong> Business Address Here</p>
+  <p><strong>Description:</strong> Brief description of the business.</p>
+  <p><strong>Facilities:</strong> List of facilities available.</p>
+  <p><strong>Phone Number:</strong> (123) 456-7890</p>
+  <p><strong>Distance:</strong> kilometres away.</p>
+  <p><strong>Web Page:</strong> <a href="https://www.businesswebsite.com">www.businesswebsite.com</a></p>
+  <h2>Opening Hours</h2>`;
+
+        var locations = [
+    {name: "Big King Reserve", lat: -36.9027136, lng: 174.7547328},
+    {name: "Meola Reef Dog Park", lat: -36.8573829, lng: 174.7107944},
+    {name: "Macleans Park", lat: -36.8798802, lng: 174.9172788},
+    {name: "Waiatarua Reserve", lat: -36.8870012, lng: 174.8259604},
+    {name: "Cornwall Park Cafe", lat: -36.8956428, lng: 174.788663},
+    {name: "Mt Albert Domain", lat: -36.8914194, lng: 174.7191481},
+    {name: "Manuka Reserve", lat: -36.7778346, lng: 174.6995507},
+    {name: "The Garden Shed", lat: -36.8826092, lng: 174.7623219},
+    {name: "Hoppers Garden Bar", lat: -36.8566419, lng: 174.7466848},
+    {name: "Dear Jervois", lat: -36.8457605, lng: 174.7342038},
+    {name: "Te Tauranga", lat: -36.9241366, lng: 174.7755313},
+    {name: "Swashbucklers Restaurant & Bar", lat: -36.8438487, lng: 174.7517872},
+    {name: "The Cav", lat: -36.8480584, lng: 174.7466791},
+    {name: "Churchill Park", lat: -36.8550789, lng: 174.8756986},
+    {name: "Fantail & Turtle", lat: -36.7851656, lng: 174.7541492},
+    {name: "Duder Regional Park", lat: -36.9058798, lng: 175.0841484},
+    {name: "Longroom & Longshot", lat: -36.8572011, lng: 174.7478098},
+    {name: "Geeks on Sainsbury", lat: -36.8796105, lng: 174.7340486},
+    {name: "Takapuna Beach Cafe", lat: -36.784201, lng: 174.7753098},
+    {name: "Hotel Ponsonby", lat: -36.8472045, lng: 174.7445129}
+];
 
         function myMap() {
             var mapProp = {
@@ -24,20 +65,21 @@
         }
 
         function updatePosition(position) {
-            map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+            gpsCoords = position.coords;
+            map.panTo(new google.maps.LatLng(gpsCoords.latitude, gpsCoords.longitude));
             map.setZoom(10);
         }
 
 
         function addPlaces() {
-            for (var i = 0; i < loc_data.length; i++) {
-                addMarker(new google.maps.LatLng(loc_data[i].lat, loc_data[i].lng));
+            for (var i = 0; i < locations.length; i++) {
+                addMarker(new google.maps.LatLng(locations[i].lat, locations[i].lng), i);
             }
 
-            addMarker(map.getCenter());
+            addMarker(map.getCenter(), -1);
         }
 
-        function addMarker(location) {
+        function addMarker(location, locationIndex) {
             const icon = {
                 url: "assets/dogicon.png",
                 scaledSize: new google.maps.Size(30, 30), 
@@ -51,12 +93,40 @@
             });
 
             marker.addListener("click", () => {
+                if (locationIndex == -1) {
+                    return;
+                }
                 map.setZoom(map.getZoom() + 5);
                 map.setCenter(marker.getPosition());
+
                 // TODO make marker open business details page.
+                alert(haversineDistanceKm(marker.getPosition().lat(), marker.getPosition().lng(), gpsCoords.latitude, gpsCoords.longitude) + " kms away.");
+                const infowindow = new google.maps.InfoWindow({
+                    content: createInfowindowContent(locations[locationIndex].name),
+                    ariaLabel: "Uluru",
+                });
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                });
             });
 
             marker.setMap(map); 
+        }
+
+        function haversineDistanceKm(lat1, lon1, lat2, lon2) {
+            // Radius of the Earth in kilometers
+            const R = 6371.0;    // Convert latitude and longitude from degrees to radians
+            const lat1Rad = lat1 * (Math.PI / 180);
+            const lon1Rad = lon1 * (Math.PI / 180);
+            const lat2Rad = lat2 * (Math.PI / 180);
+            const lon2Rad = lon2 * (Math.PI / 180);    // Difference in coordinates
+            const dLat = lat2Rad - lat1Rad;
+            const dLon = lon2Rad - lon1Rad;    // Haversine formula
+            const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1Rad) * Math.cos(lat2Rad) * Math.sin(dLon / 2) ** 2;
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));    // Distance in kilometers
+            const distance = R * c;
+            return distance;
         }
         </script>
 
