@@ -4,9 +4,10 @@
         <h1></h1>
 
         <div id="googleMap" style="width:100%;height:400px;"></div>
-
         <script>
         var map;
+
+        var loc_data = [{'lat': -36.9027136, 'lng': 174.7547328}, {'lat': -36.8573829, 'lng': 174.7107944}, {'lat': -36.8798802, 'lng': 174.9172788}, {'lat': -36.8870012, 'lng': 174.8259604}, {'lat': -36.8956428, 'lng': 174.788663}, {'lat': -36.8914194, 'lng': 174.7191481}, {'lat': -36.7778346, 'lng': 174.6995507}, {'lat': -36.8826092, 'lng': 174.7623219}, {'lat': -36.8566419, 'lng': 174.7466848}, {'lat': -36.8457605, 'lng': 174.7342038}, {'lat': -36.9241366, 'lng': 174.7755313}, {'lat': -36.8438487, 'lng': 174.7517872}, {'lat': -36.8480584, 'lng': 174.7466791}, {'lat': -36.8550789, 'lng': 174.8756986}, {'lat': -36.7851656, 'lng': 174.7541492}, {'lat': -36.9058798, 'lng': 175.0841484}, {'lat': -36.8572011, 'lng': 174.7478098}, {'lat': -36.8796105, 'lng': 174.7340486}, {'lat': -36.784201, 'lng': 174.7753098}, {'lat': -36.8472045, 'lng': 174.7445129}];
 
         function myMap() {
             var mapProp = {
@@ -27,17 +28,21 @@
             map.setZoom(10);
         }
 
+
         function addPlaces() {
-            // TODO add markers
+            for (var i = 0; i < loc_data.length; i++) {
+                addMarker(new google.maps.LatLng(loc_data[i].lat, loc_data[i].lng));
+            }
+
             addMarker(map.getCenter());
         }
 
         function addMarker(location) {
             const icon = {
-                url: "assets/dogicon.png", // url
-                scaledSize: new google.maps.Size(30, 30), // scaled size
-                origin: new google.maps.Point(0,0), // origin
-                anchor: new google.maps.Point(0, 0) // anchor
+                url: "assets/dogicon.png",
+                scaledSize: new google.maps.Size(30, 30), 
+                origin: new google.maps.Point(0,0), 
+                anchor: new google.maps.Point(0, 0) 
             };
 
             var marker = new google.maps.Marker({
@@ -46,7 +51,7 @@
             });
 
             marker.addListener("click", () => {
-                map.setZoom(8);
+                map.setZoom(map.getZoom() + 5);
                 map.setCenter(marker.getPosition());
                 // TODO make marker open business details page.
             });
