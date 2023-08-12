@@ -30,6 +30,11 @@ function updatePosition(position) {
 }
 
 function addPlaces() {
+    // TODO add markers
+    addMarker(map.getCenter());
+}
+
+function addMarker(location) {
     const icon = {
         url: "assets/dogicon.png", // url
         scaledSize: new google.maps.Size(30, 30), // scaled size
@@ -38,12 +43,13 @@ function addPlaces() {
     };
 
     var marker = new google.maps.Marker({
-        position:map.getCenter(),
+        position:location,
         icon:icon
     });
 
     marker.setMap(map); 
 }
+
 
 </script>
 
