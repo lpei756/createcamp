@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 650px;
+}
+
+.column2 {
+  float: left;
+  width: 40%;
+  padding: 20px;
+  height: 650px;
+  overflow: auto;
+}
+
+.placecard {
+  width: 550px;
+  height: 110px;
+  background: #D9D9D9;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.placecard-image {
+  width: 110px; 
+  height: 110px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placecard-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.placecard-status {
+  gap: 10px;
+  height: 27px;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.placecard-text1 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.placecard-category {
+  gap: 10px;
+  height: 27px;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.placecard-text2 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.placecard-capacity {
+  gap: 10px;
+  height: 27px;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.placecard-text3 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.placecard-distance {
+  gap: 10px;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.placecards1-text4{
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
