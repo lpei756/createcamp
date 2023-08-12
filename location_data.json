@@ -1,0 +1,957 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "AUacShjG7P6fJvmCRJfKh8CArf_V5tAdwgPnIEDLeCJXcV8aEksF4ZbkNg1gV94rGAhVZNYLsbaARlTcgqy5ut32Nr3O1EMAPyUMNRazoXSf6JxPP1l0sDXfxXWarStQrhupKxn-xgqJ76Q7DLLFsXwpy5RdHhwnIePO4MCw85yEweYM8obx_PnAWDUPAWhHgJ1RpaOnRjkb3UWEaGoFEne-FrZD7NjI1dyK4auREzL4cCZcPKg0fTBIJjovzTlXrDq_Zk85FEWCIGTRKPnbzsnG1iWU6cUsfyL-4MrEkHWfH69iwIkF2OpCgobiPLgVPNIDuHv6Ey1deIbDcDCYngIX5hF6HFzlgErU21G_IWmWCLOyezKSJS-D-RGzlT1rtYUeM8wLcwOIKUkX7Z3Fo-xoXTcorZZuadYuj4yLcUyE3LJE6lqX",
+   "results" : [
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "113A Duke Street, Mount Roskill, Auckland 1042, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.9027136,
+               "lng" : 174.7547328
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.89742554999999,
+                  "lng" : 174.7576696
+               },
+               "southwest" : {
+                  "lat" : -36.90584095000001,
+                  "lng" : 174.7526024
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Big King Reserve",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/104716467691974715497\"\u003eTony Wu\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShi-Zgq3XWd6OH23kLETEMy0pZFc8iJodxnxqoLNdwZYbnbKYMsBAbTnTuwL5o9AQ4Oy0dBdIamjmr21t_Pbu4NzSr-4XcyvY1IED1p5mPnV2Nsd4wPHTIzQnGTb7iUWzGqcieKQrPgJm62cmmsXtnDwB-yNigVXVQN_vS7YHVs5Z3I3",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJpWVtxT9GDW0RQNqcJGLvAA8",
+         "plus_code" : {
+            "compound_code" : "3QW3+WV Auckland",
+            "global_code" : "4VMP3QW3+WV"
+         },
+         "rating" : 4.6,
+         "reference" : "ChIJpWVtxT9GDW0RQNqcJGLvAA8",
+         "types" : [ "park", "tourist_attraction", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 321
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "81-189 Meola Road, Western Springs, Auckland 1022, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8573829,
+               "lng" : 174.7107944
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.85573254999999,
+                  "lng" : 174.7141043
+               },
+               "southwest" : {
+                  "lat" : -36.86233394999999,
+                  "lng" : 174.7096911
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Meola Reef Dog Park",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3456,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100068099011300936033\"\u003eLucyana\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShg9xFoRSqpBFwO4OezcSFGDGBXXs9MhU55PnDl1-0nLsUxr_zwEIAF15OYtAL0eZ5oJicN_8ozh2u5P3Q3H4_cMzObSKT1fx62h6tUdHzmzeCeNVSSPTuQEcYPIF21jSuIL13QD3x903vIIt7WaTGcqtLuY9ml8dSEL-vxSM9e37F11",
+               "width" : 4608
+            }
+         ],
+         "place_id" : "ChIJATaFGRVHDW0RoMiBTjE2ggw",
+         "plus_code" : {
+            "compound_code" : "4PV6+28 Auckland",
+            "global_code" : "4VMP4PV6+28"
+         },
+         "rating" : 4.6,
+         "reference" : "ChIJATaFGRVHDW0RoMiBTjE2ggw",
+         "types" : [ "park", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 555
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "67R The Esplanade, Mellons Bay, Auckland 2014, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8798802,
+               "lng" : 174.9172788
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.8747584,
+                  "lng" : 174.92276205
+               },
+               "southwest" : {
+                  "lat" : -36.88837759999999,
+                  "lng" : 174.91545105
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Macleans Park",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3472,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102728535305412523568\"\u003eFelix Tong\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShh0mG2HjTEee-6JR_6urDXinybftUGs5AfnWB0CMy8w5-It6XvF528GXFwp2asyiLpivo6Q2LlNYekK1u5E7UUDBW04lm2CeKoXSIq1587MKEV9f0wiBPeshEukDVk1GsJRUxq5XKSdfU3G3hw8GQPsEoY3iea_K5XYAzvfYlG1XWfQ",
+               "width" : 4640
+            }
+         ],
+         "place_id" : "ChIJa07FrudKDW0R4MycJGLvAA8",
+         "plus_code" : {
+            "compound_code" : "4WC8+2W Auckland",
+            "global_code" : "4VMP4WC8+2W"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJa07FrudKDW0R4MycJGLvAA8",
+         "types" : [ "park", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 558
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "98 Abbotts Way, Meadowbank, Auckland 1050, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8870012,
+               "lng" : 174.8259604
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.88579352010728,
+                  "lng" : 174.8273981798927
+               },
+               "southwest" : {
+                  "lat" : -36.88849317989272,
+                  "lng" : 174.8246985201072
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Waiatarua Reserve",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100543429751929657443\"\u003eAins Kislev Martinez\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShgaeAjEYJmbK4C6J_55FmrikamUT57N_5uaUC8y7jE5hZ0xBWSssKLIcJC42ud2bf4FHUnB1cBL8VxlllepTyVLnjvGTVs-p0nVGBbJlqw3ZOSjWsFserlAAiID-XMn3vnA2D9ITTdbWI7CqqS6fLxZM-IlkfZJk_TXUFOLCldS7R3P",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJHVhw56ZJDW0REM2cJGLvAA8",
+         "plus_code" : {
+            "compound_code" : "4R7G+59 Auckland",
+            "global_code" : "4VMP4R7G+59"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJHVhw56ZJDW0REM2cJGLvAA8",
+         "types" : [ "park", "tourist_attraction", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 759
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Cornwall Park Pohutakawa Drive, Epsom, Auckland 1051, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8956428,
+               "lng" : 174.788663
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.89431427010728,
+                  "lng" : 174.7899093798927
+               },
+               "southwest" : {
+                  "lat" : -36.89701392989273,
+                  "lng" : 174.7872097201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Cornwall Park Cafe",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3456,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111146558306576824844\"\u003eGlen Alexander Hill-willis\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShgZebOEZf1CCRDsnh_ZwV_w8d3FgZ57ttQBsMOrCgdZJ6yTP5XrZSdR5vPEBcnGxjsaV-M6jnsXsbNgvf5UYKWFF3BkeoEsvEicf7utQ3jphDJXG6_4wfuk3fDW5foQlHqGs2udp39zvwsC82eqryHeH8G2plY7pii7WvV7vrAdaGHV",
+               "width" : 4608
+            }
+         ],
+         "place_id" : "ChIJh2ExhZFIDW0RJAZ3VT6WTPI",
+         "plus_code" : {
+            "compound_code" : "4Q3Q+PF Auckland",
+            "global_code" : "4VMP4Q3Q+PF"
+         },
+         "price_level" : 2,
+         "rating" : 4.2,
+         "reference" : "ChIJh2ExhZFIDW0RJAZ3VT6WTPI",
+         "types" : [ "cafe", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 2026
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Summit Drive, Mount Albert, Auckland 1025, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8914194,
+               "lng" : 174.7191481
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.88830685,
+                  "lng" : 174.72323595
+               },
+               "southwest" : {
+                  "lat" : -36.89437105,
+                  "lng" : 174.71548055
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Mt Albert Domain",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 6936,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116428899940974006996\"\u003eLeon Kingsley-Smith\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShhdPL23YmcYGnAT3IYDaPo4-1YuIrbaQCwh6mfjzcFWIY5fXaUzBIyJRzYurmn8RB-glhV3x7SyF6nn3hhZvEhWCEVp6fLBjxitAqpX_S_tOOFipw5ek-CNMZS3_HJCsokCJ2rytE5Pn6r2wn5Qnkqgv4954F_qKo3znB3aqpKfaZlL",
+               "width" : 9248
+            }
+         ],
+         "place_id" : "ChIJ1Z8H9e9GDW0Rcf98DbL2qZ4",
+         "plus_code" : {
+            "compound_code" : "4P59+CM Auckland",
+            "global_code" : "4VMP4P59+CM"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJ1Z8H9e9GDW0Rcf98DbL2qZ4",
+         "types" : [ "park", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 90
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Manuka Road, Bayview, Auckland 0629, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.7778346,
+               "lng" : 174.6995507
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.77593,
+                  "lng" : 174.70548205
+               },
+               "southwest" : {
+                  "lat" : -36.7801472,
+                  "lng" : 174.69577785
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Manuka Reserve",
+         "opening_hours" : {},
+         "photos" : [
+            {
+               "height" : 3468,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113397809936070018394\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShjku7G5pY3UpMfYmKJw6l4cQJDEZYrf8zNpMi9RPy93Y2Cuh9SPNS2p9R23azWtU_FJaHeXnedHRRpGJB3tEdfqqqdBsVnSW-jeho7-7Z5sjKeubs_5RjpI68CU25J3tHRMk1SMCLQRMDK6Yy_o66KHOh8E69dibJIaKg6OSh2x3cI0",
+               "width" : 4624
+            }
+         ],
+         "place_id" : "ChIJ9amirDA5DW0Rjo74tXYI8Kk",
+         "plus_code" : {
+            "compound_code" : "6MCX+VR Auckland",
+            "global_code" : "4VMP6MCX+VR"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJ9amirDA5DW0Rjo74tXYI8Kk",
+         "types" : [ "park", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 57
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "470 Mount Eden Road, Mount Eden, Auckland 1024, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8826092,
+               "lng" : 174.7623219
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.88122997010728,
+                  "lng" : 174.7636268298928
+               },
+               "southwest" : {
+                  "lat" : -36.88392962989273,
+                  "lng" : 174.7609271701073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "The Garden Shed",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114772057489068531318\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShjWPRamSlnoD2Rfrk9kAf63kfm6G2_x4JLOGt49JWCg8MNwOJY-hHPPeOnf3sPmoRVotPkBnWoWU3AkiDlbA2ou1lLAUMuex8p7zNFXZ3cte0wkq_jgCrlRK13Vng1PFIj5mPFB2ai7UqJvm7b06p5wFdIae0yRK2Zl1IDyOo4Rad-g",
+               "width" : 6000
+            }
+         ],
+         "place_id" : "ChIJQ7BhpTJGDW0R_3x0-NSMXJ4",
+         "plus_code" : {
+            "compound_code" : "4Q86+XW Auckland",
+            "global_code" : "4VMP4Q86+XW"
+         },
+         "price_level" : 2,
+         "rating" : 4.3,
+         "reference" : "ChIJQ7BhpTJGDW0R_3x0-NSMXJ4",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1204
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "134b Ponsonby Road, Grey Lynn, Auckland 1011, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8566419,
+               "lng" : 174.7466848
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.85520897010728,
+                  "lng" : 174.7479752798927
+               },
+               "southwest" : {
+                  "lat" : -36.85790862989273,
+                  "lng" : 174.7452756201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+         "name" : "Hoppers Garden Bar",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4480,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111527805615832023277\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShhv5c4s5GxxMKsYhhkxWYuixW4qPlVCDTY_KSnaPFzne4Pl_hTjokcppaGy33qrtM_VAIsP-u13KeEewPU6Zmr7ADaUMKt09sgOLCq4jn0AN_NqAM-NiuKCMtET6loorgMSlOLKDaWcXRyyhCGcV4WRnbX8bf2fOFtDYOjor5YuR5dh",
+               "width" : 6720
+            }
+         ],
+         "place_id" : "ChIJj3NStqJHDW0R-8K82Lj0HMI",
+         "plus_code" : {
+            "compound_code" : "4PVW+8M Auckland",
+            "global_code" : "4VMP4PVW+8M"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJj3NStqJHDW0R-8K82Lj0HMI",
+         "types" : [ "bar", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 554
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "234 Jervois Road, Herne Bay, Auckland 1011, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8457605,
+               "lng" : 174.7342038
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.84433847010728,
+                  "lng" : 174.7355053798927
+               },
+               "southwest" : {
+                  "lat" : -36.84703812989272,
+                  "lng" : 174.7328057201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Dear Jervois",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 960,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100012932388764467720\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShiZ8dwIC9mZ8ZlrCJ6BnLqNefG1lxAfE6HlmZtUFsyixv598TqYj0jUMAm9XdAVOZGZdPTOOOQ8s2kIddwpTibjIA9DfUIe1Re-FJK58lRtNu-nJa_m9sgk8Tagkdtd7Kf0mxMvqaPE0RnoxqldGpWPuRWbMGY3u2COkKJJFo2FcauW",
+               "width" : 960
+            }
+         ],
+         "place_id" : "ChIJO2OwqoNHDW0RIklnT_ec2fo",
+         "plus_code" : {
+            "compound_code" : "5P3M+MM Auckland",
+            "global_code" : "4VMP5P3M+MM"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJO2OwqoNHDW0RIklnT_ec2fo",
+         "types" : [
+            "cafe",
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 744
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Onehunga, Auckland 1061, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.9241366,
+               "lng" : 174.7755313
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.92278677010728,
+                  "lng" : 174.7768811298927
+               },
+               "southwest" : {
+                  "lat" : -36.92548642989272,
+                  "lng" : 174.7741814701072
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Te Tauranga",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111271796068267815575\"\u003efelipe lizama lizama\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShhpX6Myxy9YT4Wjh0Ip1r-uR953uc97lsY6UKkDphYx5AMC49uj6t6i-xfhaZuV-x7GagtZOCUCy_3u8qudzbpxe4m2CfLbUYY4ly174UeHInI1eglE77RqkRzdSKscehmKMDA8ZZK_y_mQwMzfq-5zOgHtwg8ASdHN_LV3zjVqVQzm",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJ2QwMkLpJDW0Rcy6ReohR2Lk",
+         "plus_code" : {
+            "compound_code" : "3QGG+86 Auckland",
+            "global_code" : "4VMP3QGG+86"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJ2QwMkLpJDW0Rcy6ReohR2Lk",
+         "types" : [ "park", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 7
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "23B Westhaven Drive, Auckland CBD, Auckland 1010, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8438487,
+               "lng" : 174.7517872
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.84258597010727,
+                  "lng" : 174.7530448798927
+               },
+               "southwest" : {
+                  "lat" : -36.84528562989271,
+                  "lng" : 174.7503452201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Swashbucklers Restaurant & Bar",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 720,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101201946795997850178\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShhtzie2v5r4wknCW5bafSVWex8nY24_A4mkJjlu-2C6YflQ2Wj-uzDeYamUAuHHUmtiC8jFwDgVgHJVR0eBiq_YDnc93piNkNwMUGaGjXW_J7GmvlwXCedSHiKzV1zHLcRmgqzn8QCbM0RxCW2xNcJJtpFl27ZGW1HAVyZOIkkXoXme",
+               "width" : 1280
+            }
+         ],
+         "place_id" : "ChIJU2XeVPNHDW0RzKaK2QwQg-0",
+         "plus_code" : {
+            "compound_code" : "5Q42+FP Auckland",
+            "global_code" : "4VMP5Q42+FP"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJU2XeVPNHDW0RzKaK2QwQg-0",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1978
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "68 College Hill, Freemans Bay, Auckland 1011, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8480584,
+               "lng" : 174.7466791
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.84664607010728,
+                  "lng" : 174.7480714798927
+               },
+               "southwest" : {
+                  "lat" : -36.84934572989272,
+                  "lng" : 174.7453718201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+         "name" : "The Cav",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4480,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111677380294939462217\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShigeC_Utrv1_nm1-YRxOZ1zjBsFjr90hLleE0uO6wuNmzuoBs_7ZtSQvLzrLv-FVbplEg-ep8Ra3ce1EZq9gPKnAPId-erYzga57dzplvS5blqQRbNZel00ZS1wCuYVD-Em9OLWvAOFQuhcH9MLlTHDlk8UjO6R_99jB1dGknwYZMOe",
+               "width" : 6450
+            }
+         ],
+         "place_id" : "ChIJ8RSIDY5HDW0Rbv2eRN9JoQk",
+         "plus_code" : {
+            "compound_code" : "5P2W+QM Auckland",
+            "global_code" : "4VMP5P2W+QM"
+         },
+         "price_level" : 2,
+         "rating" : 4.3,
+         "reference" : "ChIJ8RSIDY5HDW0Rbv2eRN9JoQk",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 836
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "320/336 Riddell Road, Glendowie, Auckland 1071, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8550789,
+               "lng" : 174.8756986
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.84827704999999,
+                  "lng" : 174.8853714
+               },
+               "southwest" : {
+                  "lat" : -36.86153525,
+                  "lng" : 174.8671962
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Churchill Park",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1152,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116471699820920697532\"\u003eYukiyasu Nakamura\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShgHe0I0g9Z0zKBNZC7KZKtdAIw57de5BEFTWM-cq5G14y3ZpalGLF-aj2MfrrV0CzHYseVk1iHy5pPwtn_NS1qvRUBc5vfuuHoYu70nfzFI9le3tfOikKaeaN2n4J60VkVhlJL2Zd7x-Kb71L2sbMdadk2aqTrsTyfuBIcHLOkiL7hz",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJucpEdw1KDW0RAMGcJGLvAA8",
+         "plus_code" : {
+            "compound_code" : "4VVG+X7 Auckland",
+            "global_code" : "4VMP4VVG+X7"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJucpEdw1KDW0RAMGcJGLvAA8",
+         "types" : [ "park", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 180
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Goodside, The Avenue, Smales Farm, Takapuna, Auckland 0622, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.7851656,
+               "lng" : 174.7541492
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.78389057010728,
+                  "lng" : 174.7553793298927
+               },
+               "southwest" : {
+                  "lat" : -36.78659022989272,
+                  "lng" : 174.7526796701073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+         "name" : "Fantail & Turtle",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1080,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102720773377902175111\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShi4pwbwPd7WDj3FAHjsUDNlVKq3E2i4QimQS0YVdMFlL9bLgV22FIVut3oVJS_bJT_D1QEU2yJ9hf5ce3sP6eGCB40Pj5Fos3FaxZc4o-T3jN_xeDrsfRHiOA7IC0Jw09-iq83ksrxJchxk5bbVOuPmwzRpj-R4f8k4d7C4-qv69aNM",
+               "width" : 1080
+            }
+         ],
+         "place_id" : "ChIJiT7rUa85DW0RiRg9JpRK-Nc",
+         "plus_code" : {
+            "compound_code" : "6Q73+WM Auckland",
+            "global_code" : "4VMP6Q73+WM"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJiT7rUa85DW0RiRg9JpRK-Nc",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 875
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "933R North Road, Clevedon 2582, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.9058798,
+               "lng" : 175.0841484
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.90192674999999,
+                  "lng" : 175.09253945
+               },
+               "southwest" : {
+                  "lat" : -36.91648215000001,
+                  "lng" : 175.05897525
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+         "icon_background_color" : "#4DB546",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+         "name" : "Duder Regional Park",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2252,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115892522958295174482\"\u003etalvinder singh\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShiK3dJOsoi5gOc7qITcU0HAzvVcuh5p0fQlergOp7kq5MVuvhoK3Ig1n8gaJ5PPB_t_yEF8ZlXPeKLRsgzOvUqut65H7inKwRGL8G5dyieEXCxqPPhZEBqnhLZTaEkdaNnNDFrli2ZC_gwcRZZ_HUUsUqWc77HPNWkh5MidY4GVB1Je",
+               "width" : 4000
+            }
+         ],
+         "place_id" : "ChIJ5-juYw23cm0RAv22_sZYfqc",
+         "plus_code" : {
+            "compound_code" : "33VM+JM Clevedon",
+            "global_code" : "4VMQ33VM+JM"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJ5-juYw23cm0RAv22_sZYfqc",
+         "types" : [
+            "tourist_attraction",
+            "lodging",
+            "park",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 936
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "114 Ponsonby Road, Grey Lynn, Auckland 1011, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8572011,
+               "lng" : 174.7478098
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.85579627010728,
+                  "lng" : 174.7492205798928
+               },
+               "southwest" : {
+                  "lat" : -36.85849592989273,
+                  "lng" : 174.7465209201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+         "name" : "Longroom & Longshot",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3572,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115648720904631778306\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShj2jL4_QJ-92mrDpbj7VwOrk1sbQkvNaqBwWEeiaHSys1zga2ZAzoEoMhN5zrjf_pkjl4lr40qHTxmO0L6LuOKEZ7FDQzzBCJpeHbkDYffsDTyUBFGMHMA1JebhahPO0lXN_Liyur26FuadJrwqDynkKViNzlpyF-N9YKEbmgoMB4gE",
+               "width" : 5359
+            }
+         ],
+         "place_id" : "ChIJDcmj0pVHDW0R9GZAD-UjNW8",
+         "plus_code" : {
+            "compound_code" : "4PVX+44 Auckland",
+            "global_code" : "4VMP4PVX+44"
+         },
+         "price_level" : 2,
+         "rating" : 4.2,
+         "reference" : "ChIJDcmj0pVHDW0R9GZAD-UjNW8",
+         "types" : [
+            "bar",
+            "night_club",
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 1522
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1/55 Sainsbury Road, Mount Albert, Auckland 1025, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8796105,
+               "lng" : 174.7340486
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.87811257010728,
+                  "lng" : 174.7354523298927
+               },
+               "southwest" : {
+                  "lat" : -36.88081222989272,
+                  "lng" : 174.7327526701073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Geeks on Sainsbury",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100044525097234999633\"\u003eAndrew Woods\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShhXbXmyJbVNyy3zEJK41vaNs8svvaV8v1kpCWcoJZhPBYCK5VDRevn3ubBRbHj1Ze4Cs6SlGmIRROmP_1JaiwLnqysQcasqNYxwRJ5NtHbKKTUGUyhySOmHNjAy6S9vAWobC2bYdXk64az5TDK_iNoYyBK1JdLl-jYtLfAUjmt-Ffub",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJofuc3qpHDW0R8yS0siB9Vyg",
+         "plus_code" : {
+            "compound_code" : "4PCM+5J Auckland",
+            "global_code" : "4VMP4PCM+5J"
+         },
+         "price_level" : 2,
+         "rating" : 4.6,
+         "reference" : "ChIJofuc3qpHDW0R8yS0siB9Vyg",
+         "types" : [ "cafe", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 561
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "22 The Promenade, Takapuna, Auckland 0622, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.784201,
+               "lng" : 174.7753098
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.78290542010728,
+                  "lng" : 174.7766460298928
+               },
+               "southwest" : {
+                  "lat" : -36.78560507989272,
+                  "lng" : 174.7739463701073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Takapuna Beach Cafe",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1659,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101048972921412937585\"\u003eTakapuna Beach Cafe\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShg_fm625a8sT_RyzcmvqwMqnX0XM007FliFWPnP7TO7s81ZRV4y3uaaEinfMjHeRV2B9-8uEa-ZtV_S5H9Q8nDD9UhXCNL1p1oKnx8J6173RsPIvSSe8wspzYBL4_E6-rh1OWaM9Y46zhcB9DblcCCYKszPK4yDnaBHs_1XkkToqi6S",
+               "width" : 2485
+            }
+         ],
+         "place_id" : "ChIJ6UDZ5WI3DW0RTCnk2Kq3HiQ",
+         "plus_code" : {
+            "compound_code" : "6Q8G+84 Auckland",
+            "global_code" : "4VMP6Q8G+84"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJ6UDZ5WI3DW0RTCnk2Kq3HiQ",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 2844
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1 Saint Marys Road, St Marys Bay, Auckland 1011, New Zealand",
+         "geometry" : {
+            "location" : {
+               "lat" : -36.8472045,
+               "lng" : 174.7445129
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.84582162010727,
+                  "lng" : 174.7458221798927
+               },
+               "southwest" : {
+                  "lat" : -36.84852127989272,
+                  "lng" : 174.7431225201072
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+         "name" : "Hotel Ponsonby",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2241,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114496836826444740566\"\u003eElan Phillips\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUacShhRFTNrhQbyitWB2zF2nGS2E0K5MiEjXHVIW7avjl2nN22Jm81QvsKqMGb-O5Pv49WpjxUranideYAWawILdIBOQB_75ZuhSCz563H13SMmW65_mLXIYYbVNlFqZTgmDFRr4QMrMuja534nXXo5I54xKTbyN79ze7K93xM-em9-QlkF",
+               "width" : 3981
+            }
+         ],
+         "place_id" : "ChIJEeugsvpHDW0R4yq7zKyYh88",
+         "plus_code" : {
+            "compound_code" : "5P3V+4R Auckland",
+            "global_code" : "4VMP5P3V+4R"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJEeugsvpHDW0R4yq7zKyYh88",
+         "types" : [ "bar", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 205
+      }
+   ],
+   "status" : "OK"
+}

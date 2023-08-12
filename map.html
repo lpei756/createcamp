@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <body>
+        <h1></h1>
 
-<h1></h1>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
 
-<div id="googleMap" style="width:100%;height:400px;"></div>
+        <script>
+        var map;
 
-<script>
+        function myMap() {
+            var mapProp = {
+                center:new google.maps.LatLng(-36.848461, 174.763336), // Goes to NZ coords by default
+                zoom:4,
+            };
+            map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(updatePosition);
+            } else {
+                alert("Can't get current location");
+            }
+            addPlaces();
+        }
 
-var map;
+        function updatePosition(position) {
+            map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+            map.setZoom(10);
+        }
 
-function myMap() {
-    var mapProp = {
-        center:new google.maps.LatLng(-36.848461, 174.763336), // Goes to NZ coords by default
-        zoom:4,
-    };
-    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(updatePosition);
-    } else {
-        alert("Can't get current location");
-    }
-    addPlaces();
-}
+        function addPlaces() {
+            // TODO add markers
+            addMarker(map.getCenter());
+        }
 
-function updatePosition(position) {
-    map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-    map.setZoom(10);
-}
+        function addMarker(location) {
+            const icon = {
+                url: "assets/dogicon.png", // url
+                scaledSize: new google.maps.Size(30, 30), // scaled size
+                origin: new google.maps.Point(0,0), // origin
+                anchor: new google.maps.Point(0, 0) // anchor
+            };
 
-function addPlaces() {
-    // TODO add markers
-    addMarker(map.getCenter());
-}
+            var marker = new google.maps.Marker({
+                position:location,
+                icon:icon
+            });
 
-function addMarker(location) {
-    const icon = {
-        url: "assets/dogicon.png", // url
-        scaledSize: new google.maps.Size(30, 30), // scaled size
-        origin: new google.maps.Point(0,0), // origin
-        anchor: new google.maps.Point(0, 0) // anchor
-    };
+            marker.addListener("click", () => {
+                map.setZoom(8);
+                map.setCenter(marker.getPosition());
+                // TODO make marker open business details page.
+            });
 
-    var marker = new google.maps.Marker({
-        position:location,
-        icon:icon
-    });
+            marker.setMap(map); 
+        }
+        </script>
 
-    marker.setMap(map); 
-}
-
-
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8U0AaLpOZ3DYMTtO8_FMn9bTb_QS7H7E&callback=myMap"></script>
-
-</body>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8U0AaLpOZ3DYMTtO8_FMn9bTb_QS7H7E&callback=myMap"></script>
+    </body>
 </html> 
