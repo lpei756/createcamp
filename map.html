@@ -47,6 +47,12 @@ function addMarker(location) {
         icon:icon
     });
 
+    marker.addListener("click", () => {
+        map.setZoom(8);
+        map.setCenter(marker.getPosition());
+        // TODO make marker open business details page.
+    });
+
     marker.setMap(map); 
 }
 
