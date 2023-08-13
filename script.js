@@ -14,6 +14,15 @@ $(document).ready(function () {
           }
       });
   });
+
+  $.getJSON("address.json", function (data) {
+    $(".placecard-address .placecard-text5 span").each(function (index) {
+        if (index < data.length) {
+            $(this).text(data[index]);
+        }
+    });
+});
+
 });
 
 

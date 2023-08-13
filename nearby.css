@@ -144,9 +144,29 @@
 
 .placecard-text4 {
   position: absolute; 
-  top: 75px; 
-  left: 150px;
+  top: 40px; 
+  left: 400px;
   font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  width: 100%; 
+  padding: 5px 0; 
+}
+.placecard-address {
+  gap: 10px;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.placecard-text5 {
+  position: absolute; 
+  top: 75px; 
+  left: 120px;
+  font-size: 10px;
   font-family: Inter;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
