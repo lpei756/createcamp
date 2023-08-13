@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="nearby.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+</head>
+
+<body>
+
+  <h2>Paw friendly recommended places!</h2>
+  <div class="NavBar">
+    <a href="http://127.0.0.1:3000/HomePage.html">
+      <button class="Navbutton home">Accessible venue</button>
+  </a>
+  <a href="http://127.0.0.1:3000/nearby.html">
+    <button class="Navbutton nearby">Opening</button>
+  </a>
+</div>
+  <div class="row">
+    <div class="column1" style="background-color:lightgray;">
+      <iframe src="map.html" style="width:70%;height:80%;border:none;"></iframe>
+    </div>
+    <div class="column2" style="background-color:white;">
+      <div class="container">
+        <h3>List View</h3>
+        
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Recommended')">Recommended</button>
+          <button class="tablinks" onclick="openCity(event, 'Nearby')">Nearby</button> 
+        </div>
+        
+        <div id="Recommended" class="tabcontent">
+          <div id="placecards-container">
+                    <div class="placecard">
+                        <div class="placecard-name"><span></span></div>
+                        <div class="placecard-image">
+                            <img src="https://www.aucklandcouncil.govt.nz/Lists/backgroundimages/Kaipatiki_1.jpg"
+                                alt="Placecard 1">
+                        </div>
+                        <div class="placecard-status">
+                            <span class="placecard-text1"><span>Opened</span></span>
+                        </div>
+                        <div class="placecard-category">
+                            <span class="placecard-text2"><span>Category</span></span>
+                        </div>
+                        <div class="placecard-capacity">
+                            <span class="placecard-text3"><span>Capacity</span></span>
+                        </div>
+                        <div class="placecard-distance">
+                            <span class="placecard-text4"><span>0.3 km</span></span>
+                        </div>
+                    </div>
+
+                    <div class="placecard">
+                        <div class="placecard-name"><span></span></div>
+                        <div class="placecard-image">
+                            <img src="https://www.aucklandcouncil.govt.nz/parks-recreation/get-outdoors/aklpaths/AKLPathImages/69_MeolaReefPath0Featured.jpg"
+                                alt="Placecard 1">
+                        </div>
+                        <div class="placecard-status">
+                            <span class="placecard-text1"><span>Opened</span></span>
+                        </div>
+                        <div class="placecard-category">
+                            <span class="placecard-text2"><span></span></span>
+                        </div>
+                        <div class="placecard-capacity">
+                            <span class="placecard-text3"><span>Capacity</span></span>
+                        </div>
+                        <div class="placecard-distance">
+                            <span class="placecard-text4"><span>0.3 km</span></span>
+                        </div>
+                    </div>
+
+                    <div class="placecard">
+                        <div class="placecard-name"><span></span></div>
+                        <div class="placecard-image">
+                            <img src="https://www.aucklandcouncil.govt.nz/Lists/ParksDetailImages/macleans-park-sign.jpg"
+                                alt="Placecard 1">
+                        </div>
+                        <div class="placecard-status">
+                            <span class="placecard-text1"><span>Opened</span></span>
+                        </div>
+                        <div class="placecard-category">
+                            <span class="placecard-text2"><span>Category</span></span>
+                        </div>
+                        <div class="placecard-capacity">
+                            <span class="placecard-text3"><span>Capacity</span></span>
+                        </div>
+                        <div class="placecard-distance">
+                            <span class="placecard-text4"><span>0.3 km</span></span>
+                        </div>
+                    </div>
+
+                    <div class="placecard">
+                        <div class="placecard-name"><span></span></div>
+                        <div class="placecard-image">
+                            <img src="https://www.aucklandcouncil.govt.nz/Lists/backgroundimages/Waitemata_1.jpg"
+                                alt="Placecard 1">
+                        </div>
+                        <div class="placecard-status">
+                            <span class="placecard-text1"><span>Opened</span></span>
+                        </div>
+                        <div class="placecard-category">
+                            <span class="placecard-text2"><span>Category</span></span>
+                        </div>
+                        <div class="placecard-capacity">
+                            <span class="placecard-text3"><span>Capacity</span></span>
+                        </div>
+                        <div class="placecard-distance">
+                            <span class="placecard-text4"><span>0.3 km</span></span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <div id="Nearby" class="tabcontent">
+          <div id="placecards-container">
+            <div class="placecard">
+                <div class="placecard-name"><span></span></div>
+                <div class="placecard-image">
+                    <img src="https://www.aucklandcouncil.govt.nz/Lists/backgroundimages/Kaipatiki_1.jpg"
+                        alt="Placecard 1">
+                </div>
+                <div class="placecard-status">
+                    <span class="placecard-text1"><span>Opened</span></span>
+                </div>
+                <div class="placecard-category">
+                    <span class="placecard-text2"><span>Category</span></span>
+                </div>
+                <div class="placecard-capacity">
+                    <span class="placecard-text3"><span>Capacity</span></span>
+                </div>
+                <div class="placecard-distance">
+                    <span class="placecard-text4"><span>0.3 km</span></span>
+                </div>
+            </div>
+
+            <div class="placecard">
+                <div class="placecard-name"><span></span></div>
+                <div class="placecard-image">
+                    <img src="https://www.aucklandcouncil.govt.nz/parks-recreation/get-outdoors/aklpaths/AKLPathImages/69_MeolaReefPath0Featured.jpg"
+                        alt="Placecard 1">
+                </div>
+                <div class="placecard-status">
+                    <span class="placecard-text1"><span>Opened</span></span>
+                </div>
+                <div class="placecard-category">
+                    <span class="placecard-text2"><span></span></span>
+                </div>
+                <div class="placecard-capacity">
+                    <span class="placecard-text3"><span>Capacity</span></span>
+                </div>
+                <div class="placecard-distance">
+                    <span class="placecard-text4"><span>0.3 km</span></span>
+                </div>
+            </div>
+
+            <div class="placecard">
+                <div class="placecard-name"><span></span></div>
+                <div class="placecard-image">
+                    <img src="https://www.aucklandcouncil.govt.nz/Lists/ParksDetailImages/macleans-park-sign.jpg"
+                        alt="Placecard 1">
+                </div>
+                <div class="placecard-status">
+                    <span class="placecard-text1"><span>Opened</span></span>
+                </div>
+                <div class="placecard-category">
+                    <span class="placecard-text2"><span>Category</span></span>
+                </div>
+                <div class="placecard-capacity">
+                    <span class="placecard-text3"><span>Capacity</span></span>
+                </div>
+                <div class="placecard-distance">
+                    <span class="placecard-text4"><span>0.3 km</span></span>
+                </div>
+            </div>
+
+            <div class="placecard">
+                <div class="placecard-name"><span></span></div>
+                <div class="placecard-image">
+                    <img src="https://www.aucklandcouncil.govt.nz/Lists/backgroundimages/Waitemata_1.jpg"
+                        alt="Placecard 1">
+                </div>
+                <div class="placecard-status">
+                    <span class="placecard-text1"><span>Opened</span></span>
+                </div>
+                <div class="placecard-category">
+                    <span class="placecard-text2"><span>Category</span></span>
+                </div>
+                <div class="placecard-capacity">
+                    <span class="placecard-text3"><span>Capacity</span></span>
+                </div>
+                <div class="placecard-distance">
+                    <span class="placecard-text4"><span>0.3 km</span></span>
+                </div>
+            </div>
+        </div>
+        </div>
+      
+        
+      
+  </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

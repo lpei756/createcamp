@@ -1,180 +1,113 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column1 {
-  float: left;
-  width: 80%;
-  padding: 10px;
-  height: 80%; /* Should be removed. Only for demonstration */
-}
-
-.column2 {
-  float: left;
-  width: 40%;
-  padding: 20px;
-  height: 80%; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Button Style */
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.map {
-  background-color: transparent; 
-  color: black; 
-  border: 2px solid gray;
-  position: absolute;
-  border-radius: 10%;
-  height: 10px;
-  align-content:center;
-  top: 58px;    /* Adjust as needed */
-  right: 480px;  /* Adjust as needed */
-  z-index: 2;   /* To ensure the button is above the map */
-}
-
-.recommend {
-  background-color: transparent; 
-  color: black; 
-  border: 2px solid gray;
-  position: absolute;
-  border-radius: 10%;
-  height: 10px;
-  align-content:center;
-  top: 58px;    /* Adjust as needed */
-  right: 680px;  /* Adjust as needed */
-  z-index: 2;   /* To ensure the button is above the map */
-}
-
-.recommend:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-  
-</style>
-
-<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="nearby.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <! -- map view -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-
-
-  <! -- Function to initialize Google Map -->
-
-<script type = "text/javascript">  
-function initMap() {
-  const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
-    zoom: 12,
-  });
-
-  const popupPanel = document.getElementById('popup-panel');
-  const latitudeSpan = document.getElementById('latitude');
-  const longitudeSpan = document.getElementById('longitude');
-
-  // Add a marker on the map
-  const marker = new google.maps.Marker({
-    position: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
-    map: map,
-  });
-
-  // Open popup panel when marker is clicked
-  marker.addListener('click', () => {
-    latitudeSpan.textContent = 51.508742;
-    longitudeSpan.textContent = -0.12085;
-    popupPanel.style.display = 'block';
-  });
-
-  // Close popup panel when map is clicked
-  map.addListener('click', () => {
-    popupPanel.style.display = 'none';
-  });
-}
-</script> 
-
 </head>
+
 <body>
 
-<h2>Welcome!</h2>
-
-<div class="row">
-  <div class="column1" style="background-color:#aaa;">
-   
+  <h2>Welcome!</h2>
+  <div class="NavBar">
     <a href="http://127.0.0.1:3000/HomePage.html">
-      <button class="button home">Home</button>
+      <button class="Navbutton home">Accessible venue</button>
   </a>
   <a href="http://127.0.0.1:3000/nearby.html">
-    <button class="button recommend">Nearby</button>
+    <button class="Navbutton nearby">Opening</button>
   </a>
-  <p> Welcome!<p/>
-    <div id="googleMap" style="width:100%;height:400px;"></div>
-
-<script>
-var map;
-
-function myMap() {
-    var mapProp = {
-        center:new google.maps.LatLng(-36.848461, 174.763336), // Goes to NZ coords by default
-        zoom:4,
-    };
-    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(updatePosition);
-    } else {
-        alert("Can't get current location");
-    }
-}
-
-function updatePosition(position) {
-    map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-    map.setZoom(10);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8U0AaLpOZ3DYMTtO8_FMn9bTb_QS7H7E&callback=myMap"></script>
-
- 
-
+</div>
+  <div class="row">
+    <div class="column1" style="background-color:lightgray;">
+      <iframe src="map.html" style="width:70%;height:80%;border:none;"></iframe>
+    </div>
+    <div class="column2" style="background-color:white;">
+      <div class="container">
+        <h3>List View</h3>
+        <ul class="nav nav-tabs">
+          <li><a href="#">Recommended</a></li>
+          <li class="active"><a href="#">NearBy</a></li>
+        </ul>
+        <div class="placecard">
+            <div class="placecard-image">
+                <img src="https://images.happycow.net/venues/1024/29/46/hcmp294607_1548211.jpeg" alt="Placecard 1">
+            </div>
+            <div class="placecard-status">
+                <span class="placecard-text1"><span>Opened</span></span>
+            </div>
+            <div class="placecard-category">
+                <span class="placecard-text2"><span>Category</span></span>
+            </div>
+            <div class="placecard-capacity">
+                <span class="placecard-text3"><span>Capacity</span></span>
+            </div>
+            <div class="placecard-distance">
+                <span class="placecard-text4"><span>0.3 km</span></span>
+            </div>
+        </div>
+        
+      
+      <div class="placecard">
+        <div class="placecard-image">
+            <img src="https://images.happycow.net/venues/1024/29/46/hcmp294607_1962583.jpeg" alt="Placecard 1">
+        </div>
+          <div class="placecard-status">
+              <span class="placecard-text1"><span>Opened</span></span>
+          </div>
+          <div class="placecard-category">
+              <span class="placecard-text2"><span>Category</span></span>
+          </div>
+          <div class="placecard-capacity">
+              <span class="placecard-text3"><span>Capacity</span></span>
+          </div>
+          <div class="placecard-distance">
+              <span class="placecard-text4"><span>0.3 km</span></span>
+          </div>
+      </div>
+      
+      <div class="placecard">
+        <div class="placecard-image">
+            <img src="https://images.happycow.net/venues/1024/19/02/hcmp190207_1994425.jpeg" alt="Placecard 1">
+        </div>
+          <div class="placecard-status">
+              <span class="placecard-text1"><span>Opened</span></span>
+          </div>
+          <div class="placecard-category">
+              <span class="placecard-text2"><span>Category</span></span>
+          </div>
+          <div class="placecard-capacity">
+              <span class="placecard-text3"><span>Capacity</span></span>
+          </div>
+          <div class="placecard-distance">
+              <span class="placecard-text4"><span>0.3 km</span></span>
+          </div>
+      </div>
+      
+      <div class="placecard">
+        <div class="placecard-image">
+            <img src="https://d1mvj2ulps5lli.cloudfront.net/venues/1024/22/12/chain221_266_1553716912.jpeg" alt="Placecard 1">
+        </div>
+          <div class="placecard-status">
+              <span class="placecard-text1"><span>Opened</span></span>
+          </div>
+          <div class="placecard-category">
+              <span class="placecard-text2"><span>Category</span></span>
+          </div>
+          <div class="placecard-capacity">
+              <span class="placecard-text3"><span>Capacity</span></span>
+          </div>
+          <div class="placecard-distance">
+              <span class="placecard-text4"><span>0.3 km</span></span>
+          </div>
+      </div>
+      
   </div>
- 
+  </div>
+  </div>
 
 </body>
+
 </html>
