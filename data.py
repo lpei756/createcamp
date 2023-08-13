@@ -5,20 +5,20 @@ with open('location_data.json', 'r') as json_file:
 	print(sample_load_file)
 
 
-category_list = []
+rating_list = []
 for i in range(len(sample_load_file['results'])):
-	category_list.append(sample_load_file['results'][i]['types'][0])
+	rating_list.append(sample_load_file['results'][i]['rating'])
 		
 # Extract 'location' field
 # location = sample_load_file['results'][0]['geometry']['location']
 
 # Print extracted location
-print(category_list)
+print(rating_list)
 
 # Define the filename for the new JSON file
-new_file_name = "categories.json"
+new_file_name = "ratings.json"
 
 # Write the list to the new JSON file
 with open(new_file_name, 'w') as json_file:
-    json.dump(category_list, json_file, indent=4)
+    json.dump(rating_list, json_file, indent=4)
 
