@@ -28,31 +28,31 @@
         <div id="googleMap" style="width:100%;height:100vh;"></div>
         <script>
         var locations = [
-        {name: "Big King Reserve", lat: -36.9027136, lng: 174.7547328},
-        {name: "Meola Reef Dog Park", lat: -36.8573829, lng: 174.7107944},
-        {name: "Macleans Park", lat: -36.8798802, lng: 174.9172788},
-        {name: "Waiatarua Reserve", lat: -36.8870012, lng: 174.8259604},
-        {name: "Cornwall Park Cafe", lat: -36.8956428, lng: 174.788663},
-        {name: "Mt Albert Domain", lat: -36.8914194, lng: 174.7191481},
-        {name: "Manuka Reserve", lat: -36.7778346, lng: 174.6995507},
-        {name: "The Garden Shed", lat: -36.8826092, lng: 174.7623219},
-        {name: "Hoppers Garden Bar", lat: -36.8566419, lng: 174.7466848},
-        {name: "Dear Jervois", lat: -36.8457605, lng: 174.7342038},
-        {name: "Te Tauranga", lat: -36.9241366, lng: 174.7755313},
-        {name: "Swashbucklers Restaurant & Bar", lat: -36.8438487, lng: 174.7517872},
-        {name: "The Cav", lat: -36.8480584, lng: 174.7466791},
-        {name: "Churchill Park", lat: -36.8550789, lng: 174.8756986},
-        {name: "Fantail & Turtle", lat: -36.7851656, lng: 174.7541492},
-        {name: "Duder Regional Park", lat: -36.9058798, lng: 175.0841484},
-        {name: "Longroom & Longshot", lat: -36.8572011, lng: 174.7478098},
-        {name: "Geeks on Sainsbury", lat: -36.8796105, lng: 174.7340486},
-        {name: "Takapuna Beach Cafe", lat: -36.784201, lng: 174.7753098},
-        {name: "Hotel Ponsonby", lat: -36.8472045, lng: 174.7445129}
+        {name: "Big King Reserve", lat: -36.9027136, lng: 174.7547328, address: "113A Duke Street, Mount Roskill, Auckland 1042, New Zealand"},
+        {name: "Meola Reef Dog Park", lat: -36.8573829, lng: 174.7107944, address: "81-189 Meola Road, Western Springs, Auckland 1022, New Zealand"},
+        {name: "Macleans Park", lat: -36.8798802, lng: 174.9172788, address: "67R The Esplanade, Mellons Bay, Auckland 2014, New Zealand"},
+        {name: "Waiatarua Reserve", lat: -36.8870012, lng: 174.8259604, address: "98 Abbotts Way, Meadowbank, Auckland 1050, New Zealand"},
+        {name: "Cornwall Park Cafe", lat: -36.8956428, lng: 174.788663, address: "Cornwall Park Pohutakawa Drive, Epsom, Auckland 1051, New Zealand"},
+        {name: "Mt Albert Domain", lat: -36.8914194, lng: 174.7191481, address: "Summit Drive, Mount Albert, Auckland 1025, New Zealand"},
+        {name: "Manuka Reserve", lat: -36.7778346, lng: 174.6995507, address: "Manuka Road, Bayview, Auckland 0629, New Zealand"},
+        {name: "The Garden Shed", lat: -36.8826092, lng: 174.7623219, address: "470 Mount Eden Road, Mount Eden, Auckland 1024, New Zealand"},
+        {name: "Hoppers Garden Bar", lat: -36.8566419, lng: 174.7466848, address: "234 Jervois Road, Herne Bay, Auckland 1011, New Zealand"},
+        {name: "Dear Jervois", lat: -36.8457605, lng: 174.7342038, address: "Onehunga, Auckland 1061, New Zealand"},
+        {name: "Te Tauranga", lat: -36.9241366, lng: 174.7755313, address: "23B Westhaven Drive, Auckland CBD, Auckland 1010, New Zealand"},
+        {name: "Swashbucklers Restaurant & Bar", lat: -36.8438487, lng: 174.7517872, address: "68 College Hill, Freemans Bay, Auckland 1011, New Zealand"},
+        {name: "The Cav", lat: -36.8480584, lng: 174.7466791, address: "320/336 Riddell Road, Glendowie, Auckland 1071, New Zealand"},
+        {name: "Churchill Park", lat: -36.8550789, lng: 174.8756986, address: "Goodside, The Avenue, Smales Farm, Takapuna, Auckland 0622, New Zealand"},
+        {name: "Fantail & Turtle", lat: -36.7851656, lng: 174.7541492, address: "933R North Road, Clevedon 2582, New Zealand"},
+        {name: "Duder Regional Park", lat: -36.9058798, lng: 175.0841484, address: "114 Ponsonby Road, Grey Lynn, Auckland 1011, New Zealand"},
+        {name: "Longroom & Longshot", lat: -36.8572011, lng: 174.7478098, address: "1/55 Sainsbury Road, Mount Albert, Auckland 1025, New Zealand"},
+        {name: "Geeks on Sainsbury", lat: -36.8796105, lng: 174.7340486, address: "22 The Promenade, Takapuna, Auckland 0622, New Zealand"},
+        {name: "Takapuna Beach Cafe", lat: -36.784201, lng: 174.7753098, address: "1 Saint Marys Road, St Marys Bay, Auckland 1011, New Zealand"},
+        {name: "Hotel Ponsonby", lat: -36.8472045, lng: 174.7445129, address: "1 Saint Marys Road, St Marys Bay, Auckland 1011, New Zealand"}
         ];
         var map;
         var gpsCoords;
 
-        function createInfowindowContent(businessName, distance) {
+        function createInfowindowContent(businessName, distance, address) {
             // TODO add stuff here from data.
             var content = document.createElement('div');
 
@@ -61,15 +61,15 @@
             content.appendChild(h1);
 
             var p = document.createElement('p');
-            p.innerHTML = `<strong>Address:</strong> TODO add address here.`;
+            p.innerHTML = address;
             content.appendChild(p);
 
             var p = document.createElement('p');
-            p.innerHTML = `<strong>Description:</strong> TODO add Description here.`;
+            p.innerHTML = `<strong>Description:</strong> This place is dog-friendly! Come and hang with other paw friends.`;
             content.appendChild(p);
 
             var p = document.createElement('p');
-            p.innerHTML = `<strong>Phone Number:</strong> TODO add Phone Number here.`;
+            p.innerHTML = `<strong>Phone Number:</strong> 09 992 3287.`;
             content.appendChild(p);
 
             var p = document.createElement('p');
@@ -161,7 +161,7 @@
                 // TODO make marker open business details page.
                 var distanceInKm = calcDistanceKm(marker.getPosition().lat(), marker.getPosition().lng(), gpsCoords.latitude, gpsCoords.longitude);
                 const infowindow = new google.maps.InfoWindow({
-                    content: createInfowindowContent(locations[locationIndex].name, distanceInKm),
+                    content: createInfowindowContent(locations[locationIndex].name, distanceInKm,locations[locationIndex].address),
                     ariaLabel: "Uluru",
                 });
                 infowindow.open({
