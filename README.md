@@ -5,6 +5,7 @@ Spent the last two days at Summer of Tech's Create Camp, where I had an enrichin
 ## Teammates and Mentors
 
 I met four amazing teammates:
+- **Lei Pei(Me)**
 - **William Bryant**
 - **N. Erkam Yildirim**
 - **Thin Lai Wai Oo**
